@@ -1,10 +1,10 @@
-NodeJS Global Mentoring Program, homework 1
+NodeJS Global Mentoring Program, homework 2
 
-Basics. Node.js fundamental theory
+In-memory CRUD REST service with validation
 
 steps:
-1. checkout hw1 branch 
+1. checkout hw2 branch 
 2. npm install
 
-3. npm run task1
-4. npm run task2
+3. npm run task2.x
+4. import requests from homework2.postman_collection.json into Postman
