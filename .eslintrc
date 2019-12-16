@@ -1,0 +1,80 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".jsx",
+        ".json"
+      ]
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 120,
+        "useTabs": false,
+        "tabWidth": 2,
+        "semi": true,
+        "bracketSpacing": true
+      }
+    ],
+    "no-console": [
+      "off"
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "no-prototype-builtins": 0,
+    "require-atomic-updates": "off",
+    "node/no-unsupported-features/es-syntax": "off"
+  },
+  "globals": {
+    "inject": true,
+    "it": true,
+    "expect": true,
+    "spyOn": true,
+    "describe": true,
+    "afterEach": true,
+    "TestElement": true,
+    "beforeEach": true,
+    "jasmine": true,
+    "TestUtils": true,
+    "xit": true,
+    "afterAll": true,
+    "beforeAll": true,
+    "xdescribe": true,
+    "fdescribe": false,
+    "using": true,
+    "IScroll": true,
+    "all": true,
+    "xall": true,
+    "document": true,
+    "google": true,
+    "Event": true,
+    "window": true,
+    "CustomEvent": true,
+    "R": true,
+    "Fingerprint2": true
+  }
+}
