@@ -56,7 +56,7 @@ export class UserService {
         },
       })
     ) {
-      throw new Error('user already exists');
+      throw new Error('other user with same login exists');
     }
 
     return await UserModel.update(
