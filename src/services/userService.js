@@ -24,8 +24,9 @@ export class UserService {
     let options = {};
 
     if (loginSubstring) {
-      options.where = {};
-      options.where.login = { [Op.like]: `%${loginSubstring}%` };
+      options.where = {
+        login: { [Op.like]: `%${loginSubstring}%` },
+      };
     }
 
     if (limit) {
