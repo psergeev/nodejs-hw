@@ -1,10 +1,10 @@
-NodeJS Global Mentoring Program, homework 2
+NodeJS Global Mentoring Program, homework 3
 
-In-memory CRUD REST service with validation
+PostgreSQL And Layered Architecture
 
 steps:
-1. checkout hw2 branch 
+1. checkout hw3 branch 
 2. npm install
 
-3. npm run task2.x
+3. npm run task3
 4. import requests from homework2.postman_collection.json into Postman
