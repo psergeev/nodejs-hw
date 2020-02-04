@@ -1,10 +1,10 @@
-NodeJS Global Mentoring Program, homework 3
+NodeJS Global Mentoring Program, homework 4
 
-PostgreSQL And Layered Architecture
+Second entity and many-to-many relationships
 
 steps:
-1. checkout hw3 branch 
+1. checkout hw4 branch 
 2. npm install
 
-3. npm run task3
-4. import requests from homework2.postman_collection.json into Postman
+3. npm run task4
+4. import requests from homework4.postman_collection.json into Postman

@@ -1,10 +1,10 @@
 {
-  "name": "homework3",
+  "name": "homework4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "task3": "node node_modules/nodemon/bin/nodemon.js --exec babel-node src/app"
+    "task4": "node node_modules/nodemon/bin/nodemon.js --exec babel-node src/app"
   },
   "repository": {
     "type": "git",
