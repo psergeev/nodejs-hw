@@ -1,5 +1,7 @@
-import { UserModel } from '../models/userModel';
+const models = require('../models');
 const { Op } = require('sequelize');
+
+const UserModel = models.user;
 
 export class UserService {
   static async delete(id) {
