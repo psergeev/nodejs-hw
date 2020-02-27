@@ -22,6 +22,15 @@ export class UserService {
     return await UserModel.findByPk(id);
   }
 
+  static async authorize(login, password) {
+    return await UserModel.findOne({
+      where: {
+        login: login,
+        password: password,
+      },
+    });
+  }
+
   static async list(loginSubstring, limit) {
     let options = {};
 
