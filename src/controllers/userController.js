@@ -1,5 +1,6 @@
 import { logger } from '../decorators/logger';
 import { UserService } from '../services/userService';
+import * as JWTService from '../services/JWTService';
 
 export class UserController {
   @logger
@@ -53,6 +54,18 @@ export class UserController {
       res.json(result[1][0]);
     } else {
       res.status(404).end();
+    }
+  }
+
+  @logger
+  static async loginUser(req, res) {
+    const user = await UserService.authorize(req.body.login, req.body.password);
+
+    if (!user) {
+      res.status(403).send('Bad username/password');
+    } else {
+      let token = JWTService.createToken({});
+      res.send(token);
     }
   }
 }
