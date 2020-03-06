@@ -2,9 +2,10 @@ const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
 export function verifyToken(req, res, next) {
-  let token = req.headers['x-access-token'];
+  let token = req.headers['Authorization'];
 
   if (token) {
+    token = token.replace(/^Bearer/, '').trim();
     let cert = fs.readFileSync('./src/keys/public.pem');
 
     jwt.verify(token, cert, err => {
