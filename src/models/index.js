@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config();
 
 var fs = require('fs');
 var path = require('path');
@@ -6,9 +7,7 @@ var Sequelize = require('sequelize');
 var basename = path.basename(__filename);
 var db = {};
 
-const sequelize = new Sequelize(
-  'postgres://dcvhhhcf:tcPBPmnFOJbVKfyPUgOPTo9PBTMNcMgT@manny.db.elephantsql.com:5432/dcvhhhcf'
-);
+const sequelize = new Sequelize(process.env.DB_CONNECT_STRING);
 
 fs.readdirSync(__dirname)
   .filter(file => {

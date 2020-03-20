@@ -10,6 +10,16 @@
   "env": {
     "node": true
   },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "settings": {
     "node": {
       "tryExtensions": [
