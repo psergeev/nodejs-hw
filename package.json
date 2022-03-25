@@ -32,7 +32,7 @@
     "nodemon": "^1.19.4",
     "prettier": "^1.19.1",
     "acorn": ">=7.1.1",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   },
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.8.3",
